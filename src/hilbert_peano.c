@@ -1,8 +1,9 @@
-#include "hilbert_peano.h"
-#include "helpers_2d.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 #include <gsl/gsl_matrix.h>
+#include "hilbert_peano.h"
+#include "helpers_2d.h"
 
 void create_base_matrix(gsl_matrix* base, int hil, int sub) {
     if (hil) {
@@ -127,7 +128,7 @@ void hilbert_peano_(gsl_matrix* map, int d, int verbose, int sub) {
 }
 
 gsl_matrix* hilbert_peano(int d, int verbose, int sub) {
-    prime_check(d);
+    assert(prime_check(d));
     gsl_matrix* map = gsl_matrix_alloc(d, d);
     hilbert_peano_(map, d, verbose, sub);
     return map;
