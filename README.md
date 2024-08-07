@@ -42,6 +42,13 @@ Hilbert-Peano map:
 
 ![alt text](https://github.com/markusMM/Recurrent-Square-Filling-Curves/raw/master/plot/12x12_HilbertPeano.png "12x12 Hilbert-Peano")
 
+## Compilation
+
+You need flags `-lgsl`, `-lgslcblas` and `-lm` (`-lm` can be ignored in Windows MinGW x64/x84 compiler).
+Example for the matrix print:
+```bash
+$ gcc src/print_2d_curves.c src/helpers_2d.c src/hilbert_peano.c -o bin/print_2d_curves -lgsl -lgslcblas -lm
+```
 
 ## Notes
 *1: WARNING: This type of mappings is rare for deep learning image recognition tasks and does probably not work on pretrained networks, since they are most of the time either convolutional and/or in some kind of sense trained on a simple stack reshape of the input images.
