@@ -7,7 +7,7 @@ In this repo is one recursive funtion:
 ### Recursive Hilbert-Peano Function
  
 it can break down from any dxd square which is able to be break down in 2x2 and 3x3 bases.<br>
-Thus everything which does not break down to 5 or 7 using 2x2 and 3x3 patterns!<br>
+Thus everything which does not break down to 5x5 or 7x7 using 2x2 and 3x3 patterns!<br>
 it has an asymetric $3 \times 3$ base in case of a hulbert structure before.
 
 ## Map Examples
