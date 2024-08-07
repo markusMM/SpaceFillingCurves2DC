@@ -40,7 +40,7 @@ Hilbert-Peano map:
    0    1    8    9   10   11  132  133  134  135  142  143
 ```
 
-![alt text](https://github.com/markusMM/Recurrent-Square-Filling-Curves/raw/master/plot/12x12_PeanoHilbert.png "12x12 Peano-Hilbert")
+![alt text](https://github.com/markusMM/Recurrent-Square-Filling-Curves/raw/master/plot/12x12_PeanoHilbert.png "12x12 Hilbert-Peano")
 
 
 ## Notes
