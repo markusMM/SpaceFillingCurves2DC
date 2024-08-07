@@ -2,12 +2,13 @@
 Recurrent functions which use the Hilbert, Peano and Z curves to fill squares of many $2^m \times 2^m$ dimensionalities. Those funtions do mainly output a 2D map of the output curve. It is meant to be a more efficient symmetric mapping of 2D images into 1D lin spaces. *1
 
 ## Content
-In this repo are two recursive funtions:
+In this repo is one recursive funtion:
 
 ### Recursive Hilbert-Peano Function
  
-it can break down from any dxd square which is not a multiple of a prime number
-it has an asymetric $3 \times 3$ base in case of a hulbert structure before.
+it can break down from any dxd square which is able to be break down in 2x2 and 3x3 bases.<br>
+Thus everything which does not break down to 5x5 or 7x7 using 2x2 and 3x3 patterns!<br>
+it has an asymetric $3 \times 3$ base in case of a higher Hilbert structure.
 
 ## Map Examples
 
@@ -42,6 +43,13 @@ Hilbert-Peano map:
 
 ![alt text](https://github.com/markusMM/Recurrent-Square-Filling-Curves/raw/master/plot/12x12_HilbertPeano.png "12x12 Hilbert-Peano")
 
+## Compilation
+
+You need flags `-lgsl`, `-lgslcblas` and `-lm` (`-lm` can be ignored in Windows MinGW x64/x84 compiler).
+Example for the matrix print:
+```bash
+$ gcc src/print_2d_curves.c src/helpers_2d.c src/hilbert_peano.c -o bin/print_2d_curves -lgsl -lgslcblas -lm
+```
 
 ## Notes
 *1: WARNING: This type of mappings is rare for deep learning image recognition tasks and does probably not work on pretrained networks, since they are most of the time either convolutional and/or in some kind of sense trained on a simple stack reshape of the input images.
